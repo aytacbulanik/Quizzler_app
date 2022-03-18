@@ -23,6 +23,7 @@ struct QuestionBrain {
            Question(q: "Where is Tasmania located?", a: ["Indonesia", "Australia", "Scotland"], correctAnswer: "Australia")]
     
     func newQuestion() -> Question {
+        
         return questions[questionNumber]
     }
     
