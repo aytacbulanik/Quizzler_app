@@ -38,6 +38,9 @@
                                                 <state key="normal" title="ChoiceA" backgroundImage="Rectangle">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="answerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zcj-MI-MOP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqI-Wq-lkq">
                                                 <rect key="frame" x="0.0" y="65" width="374" height="60"/>
@@ -46,6 +49,9 @@
                                                 <state key="normal" title="ChoiceB" backgroundImage="Rectangle">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="answerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vFE-el-auu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qth-wy-uDe">
                                                 <rect key="frame" x="0.0" y="130" width="374" height="60"/>
@@ -57,6 +63,9 @@
                                                 <state key="normal" title="ChoiceC" backgroundImage="Rectangle">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="answerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p0u-wf-mkh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -88,6 +97,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iMu-fM-qjg" secondAttribute="trailing" id="iKY-cm-g5L"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choiceAButtonOut" destination="uaI-nn-G5I" id="7bc-cd-AI9"/>
+                        <outlet property="choiceBButtonOut" destination="BqI-Wq-lkq" id="9Fj-Vd-7xE"/>
+                        <outlet property="choiceCButtonOut" destination="Qth-wy-uDe" id="gyc-sT-tE6"/>
+                        <outlet property="progressBarOut" destination="BET-06-fDb" id="Ajm-ac-fF6"/>
+                        <outlet property="questionLabel" destination="2Ym-1K-sSw" id="3Za-Sa-lIl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
