@@ -18,15 +18,21 @@ class ViewController: UIViewController {
     var questionObject = QuestionBrain()
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionLabel.text = questionObject.newQuestion().q
+        updateQuestion()
     }
     
     @IBAction func answerButton(_ sender: UIButton) {
         questionObject.questionNumber += 1
-        questionLabel.text = questionObject.newQuestion().q
+        updateQuestion()
+        
     }
     
-    
+    func updateQuestion() {
+        questionLabel.text = questionObject.newQuestion().q
+        choiceAButtonOut.setTitle(questionObject.firstAnswer(), for: .normal)
+        choiceBButtonOut.setTitle(questionObject.secondAnswer(), for: .normal)
+        choiceCButtonOut.setTitle(questionObject.thirthAnswer(), for: .normal)
+    }
     
 
 }
